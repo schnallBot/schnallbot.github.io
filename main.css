@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #111;
+    color:#fff
+}
+
+/* default styling for links */
+a {
+    text-decoration: none;
+    color:#EF3E3E;
+    transition: 0.2s;
+}
+a:hover {
+    color:#fff;
+}
+
+/* header */
+#header {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 300%;
+    text-decoration: underline;
+    /* this part makes the text unselectable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* all things related to the video */
+.video-items {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+#actual-video {
+    opacity: 0.8;
+}
+#overlay {
+    background: #EF3E3E;
+}
+
+/* single container below video, and the components within */
+#below-vid {
+    position: absolute;
+    top: 100%;
+    font-size: 150%;
+    text-align: justify;
+}
+.bv-component {
+    width: 75%;
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* socials container and links */
+#socials {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom: 5px solid #EF3E3E;
+}
+#socials a {
+    margin: 20px;
+}
+
+/* all elements below the video */
+#below-vid h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+#below-vid p {
+    margin-bottom:10px;
+}
+
+/* finale message */
+#finale {
+    width: fit-content;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 50%;
+    color: #555;
+}
+
+.text-decor {
+    color:#3370ff;
+}
+
+/* img {
+    display: block;
+    width:50%;
+    padding: 5px;
+    border-style: dashed;
+    border-color: #fff;
+    margin:10px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+/*scrollbar styling*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #555;
+}
+::-webkit-scrollbar-thumb {
+    background: #fff;
+}
