@@ -25,7 +25,7 @@ a:hover {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     background-color: transparent;
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-family: "Century Gothic", sans-serif;
     font-size: 300%;
     text-decoration: underline;
     /* this part makes the text unselectable */
@@ -83,7 +83,7 @@ a:hover {
 #below-vid h2 {
     margin-bottom: 20px;
     text-align: center;
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-family: "Century Gothic", sans-serif;
 }
 #below-vid p {
     margin-bottom:10px;
@@ -124,4 +124,26 @@ a:hover {
 }
 ::-webkit-scrollbar-thumb {
     background: #fff;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .video-items {
+        display: none;
+    }
+
+    #header {
+        position:static;
+        transform: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    #below-vid {
+        position: static;
+    }
+    .bv-component {
+        width: 90%;
+    }
 }
