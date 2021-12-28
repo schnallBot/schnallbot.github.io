@@ -83,13 +83,17 @@ a:hover {
 }
 
 /* all elements below the video */
+#below-vid * {
+    margin-bottom:10px;
+}
 #below-vid h2 {
     margin-bottom: 20px;
     text-align: center;
     font-family: "Century Gothic", sans-serif;
 }
-#below-vid p {
-    margin-bottom:10px;
+#below-vid .work-proj-summary {
+    margin-left: 50px;
+    font-size: 80%;
 }
 
 /* finale message */
@@ -136,6 +140,7 @@ a:hover {
         transform: none;
         width: 100%;
         text-align: center;
+        padding-top: 30px;
     }
 
     #below-vid {
