@@ -7,7 +7,7 @@
     color:#fff
 }
 
-/* default styling for links */
+/* default styling for links + text decor */
 a {
     text-decoration: none;
     color:#EF3E3E;
@@ -15,6 +15,25 @@ a {
 }
 a:hover {
     color:#fff;
+}
+.text-decor {
+    color:#3370ff;
+}
+
+/* all things related to the video */
+.video-items {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+#actual-video {
+    opacity: 0.8;
+}
+#overlay {
+    background: #EF3E3E;
 }
 
 /* header */
@@ -35,22 +54,6 @@ a:hover {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-/* all things related to the video */
-.video-items {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;   
-}
-#actual-video {
-    opacity: 0.8;
-}
-#overlay {
-    background: #EF3E3E;
 }
 
 /* single container below video, and the components within */
@@ -100,10 +103,6 @@ a:hover {
     color: #555;
 }
 
-.text-decor {
-    color:#3370ff;
-}
-
 /* img {
     display: block;
     width:50%;
@@ -126,9 +125,8 @@ a:hover {
     background: #fff;
 }
 
-
-
-@media only screen and (max-width: 600px) {
+/* phone support */
+@media only screen and (max-device-width: 768px) {
     .video-items {
         display: none;
     }
