@@ -32,8 +32,10 @@ a:hover {
 #actual-video {
     opacity: 0.8;
 }
-#overlay {
-    background: #EF3E3E;
+#gradient {
+    position: absolute;
+    background-image: linear-gradient(#3370ff, #ef3e3e);
+    opacity: 0.5;
 }
 
 /* header */
