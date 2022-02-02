@@ -20,6 +20,7 @@ a:hover {
     color:#3370ff;
 }
 
+
 /* all things related to the video */
 .video-items {
     position: fixed;
@@ -56,6 +57,22 @@ a:hover {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+/* chevron */
+#chevron {
+    position: fixed;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    font-size: 150%;
+    animation: bounce .5s infinite ease-in-out alternate;
+}
+
+/* chevron bounce animation */
+@keyframes bounce {
+    100% { transform: translate(0, 20px); }
 }
 
 /* single container below video, and the components within */
@@ -133,7 +150,7 @@ a:hover {
 
 /* phone support */
 @media only screen and (max-device-width: 768px) {
-    .video-items {
+    .video-items, #chevron {
         display: none;
     }
 
