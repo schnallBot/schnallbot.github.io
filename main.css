@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: #111;
-    color:#fff
+    color:#fff;
 }
 
 /* default styling for links + text decor */
@@ -31,12 +31,12 @@ a:hover {
     object-fit: cover;   
 }
 #actual-video {
-    opacity: 0.8;
+    opacity: 1.0;
 }
 #gradient {
     position: absolute;
     background-image: linear-gradient(#3370ff, #ef3e3e);
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 /* header */
