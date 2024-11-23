@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 
 <html>
-
     <head>
-        <title>Josh's site</title>
+        <title>Josh's Site</title>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="media/favicon.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="myscripts.js"></script>
     </head>
 
     <body>
@@ -15,81 +16,75 @@
 
         <h1 id="header"><script type="text/javascript">document.write(new Date().getFullYear());</script>: A Josh Hodyssey</h1>
 
-        <i id="chevron" class="fa fa-chevron-down" aria-hidden="true"></i>
+        <h4 id="chevron">(scroll down.)</h4>
         
         <div id="below-vid">
-            <div id="socials">
+            <div id="socials" class="fade">
                 <a href="https://linkedin.com/in/josh-ho-a4bb591b5" class="fa fa-linkedin" target="_blank"></a>
                 <a href="https://github.com/schnallBot" class="fa fa-github" target="_blank"></a>
                 <a href="mailto:hojosh2000@gmail.com" class="fa fa-envelope" class=></a>
             </div>
 
-            <div class="bv-component" id="introduction">
+            <div class="bv-component fade" id="introduction">
                 <h2>i. the dawn of josh &#9647</h2>
                 <!-- <img src="media/itsme.jpg" alt=""> -->
                 <p>
-                    Hi there! I'm Josh Ho and this is my personal website. I majored in Computer Science at
-                    <span class="text-decor">Virginia Tech</span> and I'm currently a software developer at
-                    <span class="text-decor">Epic</span>. Here's my
-                    <a href="https://drive.google.com/file/d/11T2OVH0iD9b15EY1f5RlOqJ2Aa_vV6a1/view?usp=sharing" target="_blank">resume</a>!
+                    Hello, my name is Josh. I studied computer science at <span class="text-decor">Virginia Tech</span> and I'm currently a full stack developer at <span class="text-decor">Epic</span>. Here is my <a href="https://drive.google.com/file/d/1UHYymMRaTS5ELBODXqGWpM6ZlhS6yqxA/view?usp=sharing" target="_blank">resume</a>!
+                    <br>
+                    I'm most excited by creating usable, accessible software, as well as improving developer efficiency.
                 </p>
             </div>
 
-            <div class="bv-component" id="work-projects">
+            <div class="bv-component fade" id="work-projects">
                 <h2>ii. missions &#9737</h2>
                 <p>
                     Here are the places I've worked at:
                 </p>
                 <h3><a href="https://www.epic.com/" target="_blank">Epic</a> | aug 2022&ndash;now</h3>
                 <p class="work-proj-summary">
-                    I'm a <span class="text-decor">software developer</span> at Epic based in Madison, Wisconsin. I create tools that doctors, nurses, and other clinicians use to care for their patients, with a specialty in cardiology. My big project right now is a tool for cardiovascular clinicians to document <a href="https://my.clevelandclinic.org/health/diagnostics/17606-vascular-ultrasound" target="_blank">vascular ultrasound</a> procedures.
+                    As a full stack developer I create digital tools that doctors, nurses, and other clinicians use to care for their patients, with a specialty in cardiology. My big project right now is a suite of tools for cardiovascular clinicians to document <a href="https://my.clevelandclinic.org/health/diagnostics/17606-vascular-ultrasound" target="_blank">vascular ultrasound</a> procedures.
                 </p>
                 <h3><a href="https://agroseek.cs.vt.edu/" target="_blank">AgroSeek</a> | may 2021&ndash;may 2022</h3>
                 <p class="work-proj-summary">
-                    I worked as an <span class="text-decor">undergraduate research assistant</span> on the AgroSeek Project, alongside faculty
-                    and peers at my university, to develop software for processing and analyzing metagenomic data (DNA), to be used by students
-                    and researchers.
+                    I worked as an undergraduate research assistant on the AgroSeek Project, alongside faculty and peers at my university, to develop software for processing and analyzing metagenomic data (DNA), to be used by students and researchers.
                 </p>
                 <p>
                     <br>
                     And here are some of my projects:
                 </p>
-                <h3><a href="https://github.com/schnallBot/simple-user-manager" target="_blank">Simple User Management System</a> | jan 2022</h3>
+                <h3><span class="text-decor">Vascular Ultrasound</span> | epic, 2023&ndash;now</h3>
                 <p class="work-proj-summary">
-                    A simple user management system I put together while learning Node.js, Express, and MySQL. It currently supports viewing
-                    users, searching for users, showing only starred users, adding users, and some individual user functions: star/unstar, view
-                    in detail, edit, and delete.
+                    I worked with my team to create a brand new suite of tools for cardiovascular clinicians to document their vascular ultrasound procedures. This includes a new module in our application for documenting vessel-by-vessel measurements and findings, a new tool for hospital IT to customize the module, a new result report for physicians, and more.
+                    <br>
+                    For this high stakes project, I was involved in a little bit of everything, from chatting with potential clients to learn about their needs to developing the data model. I was most involved in designing the end user experience, ensuring our module meets high standards of usability and accessibility, and the needs of our clinicians.
                 </p>
-                <h3><span class="text-decor">Personal Web Server</span> | dec 2021</h3>
+                <h3><span class="text-decor">Copy Record Links</span> | epic, 2023</h3>
                 <p class="work-proj-summary">
-                    I worked with a teammate to create a simple web server in C for my final project in CS3214 - Computer Systems.
-                    When launched, it is able to handle basic HTTP transactions and supports file serving, mp4 streaming, and
-                    authentication, and implements threading to serve multiple clients concurrently. Personally my favorite school
-                    project.
+                    Epic uses an internal tool to do just about everything&mdash;a one-stop shop for tickets, development logs, and customer communication. I noticed that there was no easy way for me to copy the link of a ticket / log / other record so I can send it to someone, so I did some volunteer development to make this as simple as clicking a button on the record.
+                    <br>
+                    A simple feature in concept, but one I am proud of as it was me saying "fine, I'll do it myself" and has probably saved thousands of clicks and hours across all roles at my company.
                 </p>
-                <h3><span class="text-decor">Ultimate Grapher</span> | dec 2020&ndash;jan 2021</h3>
+                <h3><span class="text-decor">"Ultimate" Grapher</span> | personal, 2020</h3>
                 <p class="work-proj-summary">
-                    When I was just a budding computer science student, I worked with some friends to develop a graphing
-                    calculator-esque program which takes in coordinate points and utilizes matrix operations to generate a matching
-                    function, and displays its graph onto a GUI. Developed in Java and Python.
+                    When I was a budding computer science student, I worked with some friends to develop a graphing calculator program which takes in coordinate points and utilizes matrix operations to generate a matching function, and displays its graph onto a GUI. It was my first real experience creating something with a team and brings back fond memories, so I will never remove it from this site. 
+                    <br>
+                    Developed in Java and Python.
                 </p>
             </div>
 
-            <div class="bv-component" id="other">
+            <div class="bv-component fade" id="other">
                 <h2>iii. beyond the infinite &#9672</h2>
                 <p>
-                    When I'm not telling computers what to do, I like to bike, hike, go on excessively long walks, build mechanical keyboards, discover new music, and collect credit card rewards. I enjoy both thought-provoking and mindless media. My dream is to retire early and spend the rest of my life in a massage chair.
-                </p>
-                <p>
-                    Needless to say, I think 2001: A Space Odyssey is a neat movie. Its warning about our reliance on machines and how that could go wrong motivates me to help create a future where technologies like HAL-9000 don't go bonkers.
+                    I grew up in Northern Virginia and currently live in Madison, Wisconsin. When I'm not telling computers what to do, I like to go biking, explore new cities, eat yogurt, build mechanical keyboards, re-read Osamu Dazai's No Longer Human, and collect credit card rewards. I enjoy both thought-provoking and brain cell-destroying movies. 
+                    <br>
+                    My dream is to retire early and spend the rest of my days in a massage chair.
                 </p>
             </div>
 
             <p id="finale">
                 &#9672&#9672&#9672&#9672&#9672&#9672&#9672<br>
-                thanks for stopping by &#10024
+                last updated november 2024. thanks for stopping by &#10024
             </p>
         </div>
     </body>
-
 </html>

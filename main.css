@@ -5,6 +5,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: #050505;
     color:#f5f5f5;
+    line-height: 125%;
 }
 
 /* default styling for links + text decor */
@@ -49,6 +50,7 @@ a:hover {
     background-color: transparent;
     font-family: "Century Gothic", sans-serif;
     font-size: 300%;
+    text-decoration: underline;
     /* this part makes the text unselectable */
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -58,20 +60,21 @@ a:hover {
     user-select: none;
 }
 
-/* chevron */
+/* chevron (now used for "scroll down") */
 #chevron {
     position: fixed;
     bottom: 5%;
-    width: 100%;
-    text-align: center;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     background-color: transparent;
-    font-size: 150%;
-    animation: bounce .5s infinite ease-in-out alternate;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 125%;
+    opacity: 0;
+    transition: 0.75s;
 }
-
-/* chevron bounce animation */
-@keyframes bounce {
-    100% { transform: translate(0, 20px); }
+#chevron.visible {
+    opacity: 1;
 }
 
 /* single container below video, and the components within */
@@ -96,7 +99,7 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    border-bottom: 5px dashed #EF3E3E;
+    border-bottom: 5px solid #EF3E3E;
 }
 #socials a {
     margin: 10px;
@@ -113,6 +116,7 @@ a:hover {
 }
 #below-vid .work-proj-summary {
     margin-left: 50px;
+    margin-bottom: 20px;
     font-size: 80%;
 }
 
@@ -126,17 +130,6 @@ a:hover {
     font-size: 50%;
     color: #555;
 }
-
-/* img {
-    display: block;
-    width:50%;
-    padding: 5px;
-    border-style: dashed;
-    border-color: #fff;
-    margin:10px;
-    margin-left: auto;
-    margin-right: auto;
-} */
 
 /*scrollbar styling*/
 ::-webkit-scrollbar {
